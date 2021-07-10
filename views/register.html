@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Email App | Register</title>
+
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="register-title">
+        Register
+      </h1>
+    </header>
+
+    <section id="form-section">
+      <form id="register-form" name="form" method="post" action="/register">
+        <label for="email-input">
+          Email:
+          <input
+            name="email"
+            id="email-input"
+            type="text"
+            maxlength="50"
+            placeholder="example"
+          />
+        </label>
+        <br />
+        <label for="password-input">
+          Password:
+          <input
+            name="password"
+            id="password-input"
+            type="password"
+            maxlength="50"
+            minlength="6"
+            placeholder="******"
+          />
+        </label>
+        <br />
+        <label for="register-button">
+          <button type="submit" id="register-button">Register</button>
+        </label>
+      </form>
+    </section>
+
+    <footer>
+      Don't have a account? <a href="/register">Register here</a>!
+    </footer>
+  </body>
+</html>

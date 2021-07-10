@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8" />
+    <link rel="icon" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>App Title | Login</title>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    
+  </head>
+  <body>
+    <header>
+      <h1 id="login-title">
+        Login
+      </h1>
+    </header>
+
+    <section id="form-section">
+      <form id="login-form" name="form" method="post" action="/login">
+        <label for="email-input">
+          Email:
+          <input
+            name="email"
+            id="email-input"
+            type="text"
+            maxlength="50"
+            placeholder="example@email.com"
+          />
+        </label>
+        <br />
+        <label for="password-input">
+          Password:
+          <input
+            name="password"
+            id="password-input"
+            type="password"
+            maxlength="50"
+            minlength="6"
+            placeholder="******"
+          />
+        </label>
+        <br />
+        <label for="login-button">
+          <button type="submit" id="login-button">Login</button>
+        </label>
+      </form>
+    </section>
+
+    <footer>
+      Don't have a account? <a href="/register">Register here</a>!
+    </footer>
+  </body>
+</html>
