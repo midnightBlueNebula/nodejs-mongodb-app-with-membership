@@ -1,1 +1,1 @@
-# nodejs-mongodb-app-with-membership
+node.js start up app with mongodb connected and membership/session methods implemented
