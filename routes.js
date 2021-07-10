@@ -77,7 +77,7 @@ module.exports = function(app, db) {
     if (logged_in(req.session.user_id)) {
       res.redirect("/profile");
     }
-    const email = helper.cleanseString(req.body.email) + "@email.com";
+    const email = helper.cleanseString(req.body.email);
     const password = req.body.password;
 
     db.collection("users").findOne({ email: email }, (err, result) => {
